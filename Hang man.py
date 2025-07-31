@@ -2,6 +2,10 @@ import time
 import random
 
 
+
+
+
+
 words = ['rainbow', 'computer', 'science', 'programming','python', 'mathematics', 'player', 'condition','reverse', 'water', 'board', 'geeks']
 
 w = random.choice(words)
