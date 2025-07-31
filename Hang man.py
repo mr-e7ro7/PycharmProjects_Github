@@ -2,8 +2,6 @@ import time
 import random
 
 
-word = ["visionary","darkness","tyrant","abyss","death","hunter","demoness","moon","fool","error","door"]
-
 words = ['rainbow', 'computer', 'science', 'programming','python', 'mathematics', 'player', 'condition','reverse', 'water', 'board', 'geeks']
 
 w = random.choice(words)
