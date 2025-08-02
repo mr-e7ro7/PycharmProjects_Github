@@ -9,7 +9,7 @@ if inst == 'Y':
 
 end = 0
 
-def U_Turn():#your turn
+def u_turn():#your turn
     global end
     u = int(input("How many numbers will you enter? \n>>>"))
     for i in range(u):
@@ -23,7 +23,7 @@ def U_Turn():#your turn
         dare.remove(0)
     print(dare)
 
-def C_Turn():# computer turn
+def c_turn():# computer turn
     global end
     r = random.randint(1,4)
     for i in range(r):
@@ -48,12 +48,12 @@ dare = [0]
 x = input("if you want to go first type 'F' else type 'S' \n>>>")
 if x == 'F':
     while end == 0:
-        U_Turn()
-        C_Turn()
+        u_turn()
+        c_turn()
 else:
     while end == 0:
-        C_Turn()
-        U_Turn()
+        c_turn()
+        u_turn()
 
 
 
