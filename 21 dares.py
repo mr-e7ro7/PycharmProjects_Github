@@ -7,10 +7,8 @@ if inst == 'Y':
     print("you have to input 1, 2, or 3 numbers. the numbers must be consecutive. whoever reaches the number 21 first looses.")
 
 
-end = 0
-
 def u_turn():#your turn
-    global end
+    global dare
     u = int(input("How many numbers will you enter? \n>>>"))
     for i in range(u):
         if dare[-1] == 21:
@@ -24,8 +22,8 @@ def u_turn():#your turn
     print(dare)
 
 def c_turn():# computer turn
-    global end
-    r = random.randint(1,4)
+    global dare
+    r = random.randint(1,3)
     for i in range(r):
         if dare[-1] == 21:
             print("You Win. \nCongratulations!")
@@ -47,11 +45,11 @@ print("Computer is player 2")
 dare = [0]
 x = input("if you want to go first type 'F' else type 'S' \n>>>")
 if x == 'F':
-    while end == 0:
+    while len(dare) < 21:
         u_turn()
         c_turn()
 else:
-    while end == 0:
+    while len(dare) < 21:
         c_turn()
         u_turn()
 
