@@ -1,3 +1,7 @@
+# this is 21 dares using random. the computer does not seek to win
+
+
+
 import time
 import random
 
